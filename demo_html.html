@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        section { margin: 20px 0; }
+        form { background: #f9f9f9; padding: 20px; border-radius: 5px; }
+        label { display: block; margin: 10px 0 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #45a049; }
+        .code-example { background: #f0f0f0; padding: 15px; border-left: 4px solid #4CAF50; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Demo - Semantic Structure</h1>
+        
+        <section>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) provides the structure and semantic meaning to web content.</p>
+        </section>
+
+        <section>
+            <h2>Contact Form Example</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Semantic HTML Elements</h2>
+            <article>
+                <h3>&lt;header&gt;</h3>
+                <p>Defines the header section of a page or article</p>
+            </article>
+            <article>
+                <h3>&lt;section&gt;</h3>
+                <p>Groups related content together</p>
+            </article>
+            <article>
+                <h3>&lt;article&gt;</h3>
+                <p>Represents independent, self-contained content</p>
+            </article>
+            <article>
+                <h3>&lt;footer&gt;</h3>
+                <p>Contains footer information</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Code Example</h2>
+            <div class="code-example">
+                &lt;header&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+                &lt;/header&gt;<br>
+                &lt;main&gt;<br>
+                &nbsp;&nbsp;&lt;section&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Content here&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;/section&gt;<br>
+                &lt;/main&gt;
+            </div>
+        </section>
+    </div>
+</body>
+</html>
